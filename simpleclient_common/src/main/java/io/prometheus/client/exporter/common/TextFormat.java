@@ -41,7 +41,7 @@ public class TextFormat {
             writer.write("=\"");
             writeEscapedLabelValue(writer, sample.labelValues.get(i));
             writer.write("\"");
-            if (i< sample.labelNames.size()-1) {
+	    if (sample != null && i< sample.labelNames.size()-1) {
               writer.write(",");
             }
           }
